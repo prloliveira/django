@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lopesol - Produtos e Serviços de Limpeza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Lopesol - Produtos e Serviços de Limpeza</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Lopesol</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="text-center">Bem-vindo à Lopesol!</h2>
+            <p class="text-center">A sua solução completa para produtos de limpeza e serviços de limpeza profissional. Oferecemos uma vasta gama de produtos de alta qualidade e serviços especializados para atender todas as suas necessidades de limpeza.</p>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Nossos Serviços</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Limpeza Doméstica</li>
+                <li class="list-group-item">Limpeza Comercial</li>
+                <li class="list-group-item">Limpeza Pós-Obra</li>
+                <li class="list-group-item">Limpeza de Vidros</li>
+                <li class="list-group-item">Limpeza de Carpetes e Estofados</li>
+            </ul>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Nossos Produtos</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Detergentes e Desinfetantes</li>
+                <li class="list-group-item">Produtos Ecológicos</li>
+                <li class="list-group-item">Materiais de Limpeza</li>
+                <li class="list-group-item">Equipamentos Profissionais</li>
+            </ul>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Porquê Escolher a Lopesol?</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Qualidade e Eficiência</li>
+                <li class="list-group-item">Profissionais Experientes</li>
+                <li class="list-group-item">Atendimento Personalizado</li>
+                <li class="list-group-item">Satisfação Garantida</li>
+            </ul>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Entre em Contato Connosco</h2>
+            <p class="text-center">Telefone: 924-202-057</p>
+            <p class="text-center">Email: <a href="mailto:angelicacosta008@gmail.com">angelicacosta008@gmail.com</a></p>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Horário de Funcionamento</h2>
+            <p class="text-center">Segunda a Sexta: 9:00 - 18:00</p>
+            <p class="text-center">Sábado: 9:00 - 13:00</p>
+            <p class="text-center">Domingo: Fechado</p>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Siga-nos nas Redes Sociais</h2>
+            <p class="text-center">
+                <a href="https://www.instagram.com/lopesolcleaning/" class="btn btn-danger mx-1">Instagram</a>
+            </p>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="text-center">Receba as Últimas Novidades e Ofertas</h2>
+            <form action="" method="post" class="text-center">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control d-inline-block w-auto mx-2" required>
+                    <button type="submit" class="btn btn-success">Inscrever-se</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Lopesol. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
